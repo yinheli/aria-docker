@@ -1,0 +1,13 @@
+version: "3"
+services:
+  aria:
+    build: .
+    restart: always
+    hostname: aria
+    user: root
+    ports:
+     - "8082:80"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - ./data:/data
