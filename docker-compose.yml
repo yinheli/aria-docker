@@ -11,3 +11,4 @@ services:
       - TZ=Asia/Shanghai
     volumes:
       - ./data:/data
+      - ./aria2.conf:/aria2.conf
